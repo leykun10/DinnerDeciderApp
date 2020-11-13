@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentColor"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/detailLog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectedFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dd_logo" />
+
+    <Button
+        android:id="@+id/decideButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:background="#05060B"
+        android:text="Decide!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#40445A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addFoodField"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="239dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="32dp"
+        android:background="#BBBDC5"
+        android:ems="10"
+        android:hint="Add Food"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/decideButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedFood"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <TextView
+        android:id="@+id/selectedFood"
+        android:layout_width="139dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="foods"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailLog" />
+
+    <Button
+        android:id="@+id/addFoodButton"
+        android:layout_width="243dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="16dp"
+        android:text="Add Food"
+        android:textSize="18sp"
+        app:backgroundTint="#515468"
+        app:layout_constraintBottom_toTopOf="@+id/decideButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addFoodField"
+        app:layout_constraintVertical_bias="0.548" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="137dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="46dp"
+        android:text="reset"
+        android:textSize="18sp"
+        app:backgroundTint="#3E3C3C"
+        app:layout_constraintBottom_toTopOf="@+id/addFoodField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedFood" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
